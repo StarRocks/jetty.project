@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.eclipse.jetty</groupId>
   <artifactId>jetty-project</artifactId>
-  <version>9.4.59-SNAPSHOT</version>
+  <version>9.4.60-celerdata-b20260421</version>
   <name>Jetty :: Project</name>
   <description>The Eclipse Jetty Project</description>
   <packaging>pom</packaging>
@@ -248,9 +248,6 @@
                   <version>[1.8,)</version>
                   <message>[ERROR] OLD JDK [${java.version}] in use. Jetty ${project.version} requires JDK 1.8.0 or newer</message>
                 </requireJavaVersion>
-                <versionOsgiRule implementation="org.eclipse.jetty.toolchain.enforcer.rules.RequireOsgiCompatibleVersionRule" />
-                <versionRedhatRule implementation="org.eclipse.jetty.toolchain.enforcer.rules.RequireRedhatCompatibleVersionRule" />
-                <versionDebianRule implementation="org.eclipse.jetty.toolchain.enforcer.rules.RequireDebianCompatibleVersionRule" />
                 <requireUpperBoundDeps>
                   <excludes>
                     <exclude>javax.enterprise:cdi-api</exclude>
